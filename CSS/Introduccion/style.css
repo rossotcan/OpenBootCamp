@@ -1,0 +1,28 @@
+body{
+    background-color: red;
+    /*coolors.co nos da una paleta de colores para usar en la web, con sentido*/
+}
+h1{
+    color: blanchedalmond;
+    font-size: 2rem;
+    
+}
+p{
+    color: white;
+    font-size: 20px;
+}
+/* comentando un css */
+/*Selectores de id*/
+#unico {
+    color: blueviolet;
+}
+/*Selector de clase*/
+.clase{
+    color:brown;
+    text-transform: uppercase;
+
+}
+
+#unico, .clase{
+    text-decoration: underline;
+}
