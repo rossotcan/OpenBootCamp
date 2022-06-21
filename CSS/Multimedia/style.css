@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+}
+.imagenprincipal{
+    transition: 1s;
+    width: 100%;
+    opacity: 1;
+}
+.imagenprincipal:hover{
+    opacity: 1;
+    transition: 2s;
+}
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    z-index: 10;
+}
+.galeria__imagen{
+    width: 300px;
+    opacity: 0.3;
+    transition:1s;
+}
+.galeria__imagen:hover{
+    opacity: 1;
+    transition: 2s;
+    cursor: pointer;
+}
+

@@ -1,0 +1,15 @@
+.div1, .div2{
+    /*Por defecto display: block;*/
+    background-color: red;
+}
+.span1, .span2{
+    /*Por defecto display: inlne;*/
+    background-color: blueviolet;
+    /*display: inline-block;
+    height: 200px;*/
+}
+.img{
+    width: 50px;
+    height: 50px;
+    /*Por defecto display:inline;*/
+}

@@ -1,0 +1,29 @@
+.flex{
+    background-color: yellow;
+    height: 300px;
+    /*pone las cosas en línea si no le dices lo contrario*/
+    display: flex;
+    /*posicion centro en el eje de las x (horizontal)*/
+    justify-content: space-evenly;
+    /*posicion centro en el eje de las y (vertical)*/
+    align-items: center;
+    /*flex-direction: column;*/
+}
+.contenido1{
+    background-color: white;
+    height: 200px;
+    width: 100px;
+    border: 1px solid blue;
+}
+.contenido2{
+    background-color: white;
+    height: 200px;
+    width: 100px;
+    border: 1px solid ;
+}
+.contenido3{
+    background-color: white;
+    height: 200px;
+    width: 100px;
+    border: 1px solid blue;
+}

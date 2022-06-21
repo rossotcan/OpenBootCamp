@@ -1,0 +1,30 @@
+div{
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 5px;
+}
+.static{
+    position: static;
+    left: 30px;
+    height: 3000px;
+}
+.relative{
+    position: relative;
+    left: 30px;
+}
+/*Posicionamiento fijo, se utiliza para barras de navegacion*/
+.fixed{
+    position: fixed;
+    bottom: 0px;
+}
+/*Se posiciona en unlugar concreto denrto de su padre. normalmente se usa absoluta con un padre relativo.*/
+.absolute{
+    position: absolute;
+    top: 0px;
+}
+/*muy usado en barra de navegacion, efecto se mueve y cuando bajas ya se queda pegado al top*/
+.sticky{
+    background-color: darkcyan;
+    position: sticky;
+    top: 0;
+}
