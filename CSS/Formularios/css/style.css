@@ -1,0 +1,81 @@
+/*Importando fuente google
+font-family: 'Josefin Sans', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.contenedor{
+    margin: 0% 20%;
+    max-width: 60%;
+    text-align: left;
+    padding: 50px;
+    padding-top: 200px;
+}
+svg{
+    height: 15px;
+    width: 15px;
+    padding: 12px 12px;
+    margin-right: 10px;
+}
+.registros{
+    margin: 40px 0px;
+    display: flex;
+}
+.registros__google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn_google{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 250px;
+    padding: 2px 1px;
+    border-radius: 5px;
+}
+.btn_google:hover{
+    opacity: 0.7;
+}
+.btn_google svg{
+    background-color: white;
+}
+.registros__twitter{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.svg-twitter{
+    fill: gray;
+}
+.separador{
+    text-align: center;
+    color: gray;
+    font-size: small;
+}
+.form{
+    display:flex;
+    flex-direction: column;
+    font-weight: 700;
+    gap: 15px;
+    margin: 40px 0px;
+}
+.formulario{
+    outline: none;
+    padding: 10px 1px;
+    border-radius: 5px;
+    border: none;
+}
+.formulario:focus{
+    border: 1px solid palevioletred;
+}
+    
+
+
