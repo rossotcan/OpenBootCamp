@@ -8,74 +8,163 @@ font-family: 'Josefin Sans', sans-serif;
     padding: 0;
     margin: 0;
 }
-.contenedor{
-    margin: 0% 20%;
-    max-width: 60%;
-    text-align: left;
-    padding: 50px;
-    padding-top: 200px;
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: left;
+    gap: 30px;
+    margin-left: 25%;
+    margin-top: 20px;
+    font-size: medium;
 }
-svg{
+/* Estilos para logo dribbble */
+.logo-div{
+    display: flex;
+    justify-content: start;
+    margin-top: 30px;
+}
+.logo{
+    height: 40px;
+    width: 100px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+/* Estilos para botones de registro */
+.buttons{
+    
+    display: flex;
+    gap: 30px;
+    height: 40px;
+}
+.google-btn{
+    background-color: #1a73e9;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 20px 2px 2px;
+    color: white;
+    cursor: pointer;
+}
+.svg__google-btn{
+    display: flex;
+    background-color: white;
     height: 15px;
     width: 15px;
-    padding: 12px 12px;
-    margin-right: 10px;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 2px;
 }
-.registros{
-    margin: 40px 0px;
+.google-btn:hover{
+    opacity: 0.75;
+}
+.twitter-btn{
+    width: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.registros__google{
+.svg__twitter-btn{
+    height: 15px;
+    width: 15px;
+    fill: #6e6e79;    
+}
+/* Estilo separador */
+.separator{
     display: flex;
     align-items: center;
+    gap: 15px;
+    color: #c3ccd8;
+}
+.separator hr{
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #c3ccd8;
+}
+/* Estilo formulario */
+.form{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 2px;
+}
+.name,
+.username,
+.email,
+.password
+{
+    display: flex;
+    flex-direction: column;
+}
+.name span,
+.username span,
+.email span,
+.password span{
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.name input,
+.username input,
+.email input,
+.password input{
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.password input::placeholder{
+    opacity: 0.8;
+}
+.name input:focus,
+.username input:focus,
+.email input:focus,
+.password input:focus{
+    border: 1px solid #ec56909a;
+}
+/* Estilo checkbox */
+.checkbox{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.checkbox span{
+    margin-left: 20px;
+    opacity: 0.7;
+    font-size: 15px;
+}
+/* Estilo boton */
+.button-account{
+    height: 40px;
+    width: 100%;
+    border: none;
+    color: white;
+    background-color: #ea4c89;
+    border-radius: 10px;
+    font-size: large;
+}
+
+/* Estilos already a member */
+.account-exists{
+    display: flex;
     justify-content: center;
 }
-.btn_google{
-    background-color: blue;
-    color: white;
+.account-exists a{
+    margin-left: 10px;
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    height: 40px;
-    width: 250px;
-    padding: 2px 1px;
-    border-radius: 5px;
 }
-.btn_google:hover{
+/* Estilos al footer */
+.footer p{
+    font-size: smaller;
     opacity: 0.7;
 }
-.btn_google svg{
-    background-color: white;
-}
-.registros__twitter{
-    display: flex;
-    align-items: center;
-    margin-left: 50px;
-}
-.svg-twitter{
-    fill: gray;
-}
-.separador{
-    text-align: center;
-    color: gray;
-    font-size: small;
-}
-.form{
-    display:flex;
-    flex-direction: column;
-    font-weight: 700;
-    gap: 15px;
-    margin: 40px 0px;
-}
-.formulario{
-    outline: none;
-    padding: 10px 1px;
-    border-radius: 5px;
-    border: none;
-}
-.formulario:focus{
-    border: 1px solid palevioletred;
-}
-    
+
+
 
 
