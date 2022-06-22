@@ -7,6 +7,11 @@ font-family: 'Josefin Sans', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
     padding: 0;
     margin: 0;
+    
+}
+body{
+    background-color: #161717;
+    color: white;
 }
 .container{
     display: flex;
@@ -62,6 +67,7 @@ font-family: 'Josefin Sans', sans-serif;
 .twitter-btn{
     width: 40px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
     background-color: white;
     display: flex;
@@ -102,26 +108,21 @@ font-family: 'Josefin Sans', sans-serif;
     flex-direction: column;
     width: 100%;
 }
-label span,
-label span,
-label span,
+
 label span{
     margin-bottom: 5px;
     font-weight: 700;
     width: 100%;
 }
-label input,
-label input,
-label input,
 label input{
-    border: none #fff;
+    border: none #212121;
     padding: 10px 10px;
     border-radius: 5px;
-    outline: none #fff;
+    outline: none #212121;
     margin-bottom: 30px;
     font-size: 18px;
-    background-color: #f3f3f3;
-    transition: border 1s, outline 1s;
+    background-color: #212121;
+    transition: border 300ms, outline 300ms;
 }
 .password input::placeholder{
     opacity: 0.8;
@@ -130,6 +131,7 @@ label input{
 .username input:hover,
 .email input:hover,
 .password input:hover{
+    background-color: #454045;
     border: 1px solid #ec56909a;
     outline: 3px solid #eedde3;
 }
@@ -137,6 +139,7 @@ label input{
 .username input:focus,
 .email input:focus,
 .password input:focus{
+    background-color: #454045;
     border: 1px solid #ec56909a;
     outline: 3px solid #eedde3;
 }
@@ -145,14 +148,20 @@ label input{
 .checkbox{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
     cursor: pointer;
 }
 
 .checkbox span{
     margin-left: 20px;
+    margin-bottom: 0;
     opacity: 0.7;
     font-size: 15px;
+}
+
+.checkbox input{
+    margin: 0;
 }
 /* Estilo boton */
 .button-account{
