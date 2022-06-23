@@ -1,0 +1,13 @@
+/*Aquí definimos variables*/
+:root{
+    --color-principal: rgb(13, 101, 141);
+    --width-principal: 250px;
+}
+.container{
+    background-color: yellow;
+    max-width: var(--width-principal);
+}
+.titulo, .footer{
+    color: var(--color-principal);
+}
+

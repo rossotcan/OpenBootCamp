@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    padding: 1rem;
+    background-color: yellow;
+    min-height: 6rem;
+    display: flex;
+    /*flex-direction: column;*/
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.item{
+    background-color: salmon;
+    padding: 1rem;
+    width: 10rem;
+}
+
+.grid{
+    margin-top: 5rem;
+    background-color: yellow;
+    display: grid;
+    padding: 1rem;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*grid-template-columns: repeat(4, 1fr);*/
+}
+.item-grid{
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: salmon;
+}

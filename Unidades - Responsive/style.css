@@ -1,0 +1,31 @@
+.body{
+    margin: 0;
+    padding: 0;
+}
+.escenarios{
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #bbb;
+}
+.escenario-1{
+    width: 100%;
+}
+.escenario-2{
+    width: 50%;
+}
+/* 200 px son 200px, es unidad fija */
+.px{
+    background-color: green;
+    width: 200px;
+}
+/* hace referencia al elemento padre, 50% de escenario-1 que toma el width 100% de la pantalla*/
+.porcentaje{
+    background-color: red;
+    width: 50%;
+}
+/* view width , anchura de la pantalla que vemos (muy top) 
+   view hight vh haría relacion a la altura de la pantalla */
+.view{
+    width: 50vw;
+    background-color: yellow;
+}
