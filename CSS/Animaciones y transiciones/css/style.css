@@ -1,0 +1,48 @@
+.padre{
+    height: 400px;
+    width: 400px;
+    background-color: darkslateblue;
+    margin: auto;
+}
+.hijo{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*transition: transform 1s .5s;*/
+    animation: nombrepersonalizado ease-in-out 15s infinite alternate ;
+}
+.padre:hover .hijo{
+/*    transform: translate(100%, 100%);
+    background-color: red;*/
+    animation-play-state: paused;
+}
+
+@keyframes nombrepersonalizado {
+    0%{
+        background-color: darkorchid;
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(100%);
+    }
+    50%{
+        transform: translateX(100%) translateY(100%);
+    }
+    75%{
+        transform: translateX(0%) translateY(100%);
+    }
+    100%{
+        background-color: palevioletred;
+        transform: translateX(0%);
+    }
+}
+
+.btn-tooltip{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: aquamarine;
+    border-bottom: 1px solid aqua;
+}
