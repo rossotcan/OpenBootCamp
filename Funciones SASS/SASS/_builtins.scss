@@ -1,0 +1,76 @@
+//FUNCIONES CADENAS
+@use "sass:string";
+//FUNCIONES NUMERICAS
+@use "sass:math";
+//FUNCIONES LISTAS
+@use "sass:list";
+//FUNCIONES SELECTOR
+@use "sass:selector";
+//FUNCION COLOR
+@use "sass:color";
+//@debug "hola";
+@debug string.quote(Helvetica);
+//devuelve el indice donde se encuentra soto en la primera frase
+@debug string.index("Rosa Soto Cantero","Soto");
+//devuelve una concatenacion
+$string: "Rosa";
+$newString: string.insert($string, " Soto",6);
+@debug $newString;
+//devuelve la longitud
+@debug string.length($string);
+//devuelve la cadena recortada de donde a donde queremos
+@debug string.slice($newString, 6, 9);
+//minus y mayus
+@debug string.to-upper-case("hola esto es minusculo");
+@debug string.to-lower-case("HOLA ESTO ES MAYUS");
+
+//FUNCIONES NUMERICAS
+@debug math.$e;
+@debug math.$pi;
+//redondea hacia arriba
+@debug math.ceil(2.2);
+//redondea hacia abajo
+@debug math.floor(2.7);
+//devuelve el maximo o el minimo entre 0 y 10 en este caso
+//si es que el numero del medio no esta en ese rango.
+@debug math.clamp(0,24,10);
+
+@debug math.max(4,2,10,5);
+@debug math.min(4,2,10,5);
+
+//redondeando por derecho
+@debug math.round(4.6);
+@debug math.round(4.4);
+//devuelve el numero absoluto
+@debug math.abs(-15);
+//elevar 
+@debug math.pow(2,2);
+//raiz cuadrada
+@debug math.sqrt(16);
+
+
+//FUNCIONES LISTAS. 
+$lista1: 10px 10px 0px 15px;
+
+@debug $lista1;
+//añade una cosa mas a la lista
+@debug list.append($lista1, 25px);
+//nos dice el indice de la lista donde se enuentra en concreto lo q buscamos
+@debug list.index($lista1, 0px);
+//cuantas cosas tiene la lista
+@debug list.length($lista1);
+
+//FUNCIONES DE SELECTOR
+$selector-1: "a";
+$selector-2: ".disabled";
+@debug selector.append($selector-1, $selector-2);
+
+//FUNCIONES COLOR
+$color: #e251ff;
+@debug color.adjust($color, $red: -50);
+
+@debug color.complement($color);
+//me oscurece un 25% el color que yo le pasé
+@debug darken($color, 25%);
+//me aclara un 60% el color que yo le pasé
+@debug lighten($color, 50%);

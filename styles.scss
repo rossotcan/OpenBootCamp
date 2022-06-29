@@ -1,0 +1,65 @@
+.btn, .btn-2 {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  background-color: rgba(43, 43, 43, 0.4117647059);
+  cursor: pointer;
+}
+.btn:hover, .btn-2:hover {
+  background-color: blue;
+  color: white;
+}
+
+.btn-2 {
+  border-radius: 1rem;
+}
+
+/*creando variables para reusar*/
+/*mixin para reutilizar codigo, se le pueden pasar variables a la funcion por si se
+quiere utilizar en varios sitios con diferentes cosas.*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  background-color: aquamarine;
+  min-height: 50vh;
+}
+
+h1 {
+  background-color: bisque;
+  margin: 0;
+  width: 50rem;
+  text-transform: uppercase;
+  background-color: #2b2b2b;
+}
+
+p {
+  background-color: burlywood;
+  width: 50rem;
+  text-transform: uppercase;
+  background-color: #f1f1f1;
+}
+
+.listado {
+  width: 10rem;
+  background-color: aqua;
+  padding: 2rem;
+}
+.listado li {
+  color: red;
+  list-style: disc;
+}
+.listado li:hover {
+  color: white;
+}
+
+/* componentes 
+@import "sass/componentes";*/
+/* mixins 
+@import "sass/mixins.scss";*/
+/* estilos 
+@import "sass/style.scss";*/
+
+/*# sourceMappingURL=styles.scss.map */

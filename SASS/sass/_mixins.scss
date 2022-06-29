@@ -1,0 +1,9 @@
+/*creando variables para reusar*/
+$text-color: #2b2b2b;
+/*mixin para reutilizar codigo, se le pueden pasar variables a la funcion por si se
+quiere utilizar en varios sitios con diferentes cosas.*/
+@mixin formato-texto($bg-color: #f1f1f1){
+    width: 50rem;
+    text-transform: uppercase;
+    background-color: $bg-color;
+}
