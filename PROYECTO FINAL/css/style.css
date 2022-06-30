@@ -1,0 +1,239 @@
+.btn-main, .btn-main-s {
+  padding: 0.5rem 2rem;
+  border-radius: 0.25rem;
+  background-color: #0075FE;
+  color: white;
+  border: 1px solid #0075FE;
+}
+.btn-main-s {
+  padding: 0.1rem 1rem;
+}
+.btn-main:hover, .btn-main-s:hover {
+  background-color: white;
+  color: #0075FE;
+  border: 1px solid #0075FE;
+}
+
+.btn-sec, .btn-sec-s {
+  padding: 0.5rem 2rem;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+.btn-sec-s {
+  padding: 0.1rem 1rem;
+}
+.btn-sec:hover, .btn-sec-s:hover {
+  border: none;
+  color: #0075FE;
+}
+
+.main-menu {
+  margin: 0;
+}
+.main-menu li {
+  padding: 0 0.25rem;
+  font-size: 0.75;
+  list-style: none;
+  display: inline;
+}
+.main-menu li a {
+  text-decoration: none;
+  color: #000000;
+}
+.main-menu li a:hover {
+  text-decoration: underline;
+}
+
+.icon-sm i {
+  font-size: 1.5rem;
+  color: #0075FE;
+  padding: 0.25rem 0.55rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.feature .icon {
+  font-size: 5rem;
+  color: #0075FE;
+}
+.feature .description .title {
+  font-size: 1.2rem;
+}
+.feature .description .text {
+  color: #888;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.feature .cta {
+  margin-top: 3rem;
+  color: #0075FE;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.icon-desc {
+  text-align: center;
+}
+.icon-desc .icon {
+  color: #0075FE;
+  font-size: 5rem;
+}
+.icon-desc .title {
+  font-size: 1.5rem;
+}
+
+.nav {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  border-bottom: 1px solid #ddd;
+}
+.nav .logo a img {
+  max-width: 7rem;
+}
+
+.sec-home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem;
+  max-width: 65rem;
+  margin: auto;
+}
+.sec-home .cta-text {
+  color: #0075FE;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.sec-home .home-title {
+  font-size: 3rem;
+  width: 20rem;
+}
+.sec-home .home-description {
+  width: 25rem;
+  font-weight: 600;
+}
+
+.lead-magnet .form-control {
+  padding: 0.5rem;
+}
+
+.sec-features, .sec-onboarding .intro, .sec-benefits .intro {
+  max-width: 65rem;
+  margin: 3rem auto 0 auto;
+}
+.sec-features .intro, .sec-onboarding .intro .intro, .sec-benefits .intro .intro {
+  text-align: center;
+}
+.sec-features .intro h3, .sec-onboarding .intro .intro h3, .sec-benefits .intro .intro h3 {
+  font-size: 2rem;
+}
+.sec-features .intro p, .sec-onboarding .intro .intro p, .sec-benefits .intro .intro p {
+  color: #888;
+}
+.sec-features .features, .sec-onboarding .intro .features, .sec-benefits .intro .features {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5rem;
+  align-items: center;
+}
+.sec-features .features .texto, .sec-onboarding .intro .features .texto, .sec-benefits .intro .features .texto {
+  max-width: 40%;
+}
+.sec-features .features .texto .feature, .sec-onboarding .intro .features .texto .feature, .sec-benefits .intro .features .texto .feature {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+}
+.sec-features .features .texto .feature .description .title, .sec-onboarding .intro .features .texto .feature .description .title, .sec-benefits .intro .features .texto .feature .description .title {
+  font-size: 1.1rem;
+}
+.sec-features .features .texto .feature .description .text, .sec-onboarding .intro .features .texto .feature .description .text, .sec-benefits .intro .features .texto .feature .description .text {
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.sec-benefits {
+  border-top: 1px solid #ddd;
+  margin: 0 0 3rem 0;
+}
+.sec-benefits .intro {
+  text-align: center;
+}
+.sec-benefits .sec-benefits-features {
+  text-align: center;
+  max-width: 65rem;
+  margin: 3rem auto;
+  gap: 2rem;
+}
+
+.sec-kpis {
+  background-color: #0075FE;
+  height: 10rem;
+  width: 100%;
+  margin: 5rem 0;
+}
+.sec-kpis .sec-kpis-data {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: 65rem;
+  margin: 0 auto;
+  gap: 3rem;
+}
+.sec-kpis .number {
+  color: white;
+  font-size: 2.5rem;
+}
+.sec-kpis .number-description {
+  color: white;
+  font-size: 0.7rem;
+}
+
+.sec-onboarding {
+  margin: 3rem 0;
+}
+.sec-onboarding .intro {
+  text-align: center;
+}
+.sec-onboarding .onboarding {
+  max-width: 65rem;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.sec-onboarding .onboarding .onboarding-elements {
+  padding: 0;
+  text-align: center;
+}
+.sec-onboarding .onboarding .onboarding-elements .description .title {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.sec-footer-cta {
+  margin: 5rem auto 0 auto;
+  display: flex;
+  align-items: center;
+  width: 65rem;
+}
+.sec-footer-cta .footer-text {
+  width: 30%;
+}
+.sec-footer-cta .footer-text .footer-title {
+  font-size: 2rem;
+}
+.sec-footer-cta .footer-text .footer-description {
+  font-size: 0.8rem;
+}
+.sec-footer-cta .footer-img {
+  max-width: 70%;
+}
+
+/*# sourceMappingURL=style.css.map */

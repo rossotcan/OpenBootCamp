@@ -1,0 +1,160 @@
+@use "../sass/components";
+
+.nav{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    border-bottom: 1px solid #ddd;
+
+    .logo a img{
+        max-width: 7rem;
+    }
+}
+.sec-home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+    max-width:65rem;
+    margin: auto;
+    .cta-text{
+        color: components.$color-main;
+        font-size: .8rem;
+        font-weight: 600;
+    }
+    .home-title{
+        font-size: 3rem;
+        width: 20rem;
+    }
+    .home-description{
+        width: 25rem;
+        font-weight: 600;
+    }
+}
+
+.lead-magnet{
+    .form-control{
+        padding: .5rem;
+    }
+}
+
+.sec-features{
+    max-width:65rem;
+    margin: 3rem auto 0 auto;
+    .intro{
+        text-align: center;
+        h3{
+            font-size: 2rem;
+        }
+        p{
+            color: #888;
+        }
+    }
+    .features{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 5rem;
+        align-items: center;
+        .texto{
+            max-width: 40%;
+            .feature{
+                display: flex;
+                flex-direction: row;
+                
+                gap: 1.2rem;
+                .description{
+                    .title{
+                        font-size: 1.1rem;
+                    }
+                    .text{
+                        font-size: .95rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+.sec-benefits{
+    border-top: 1px solid #ddd;
+    margin: 0 0 3rem 0;
+    .intro{
+        @extend .sec-features, .intro;
+        text-align: center;
+    }
+        
+    .sec-benefits-features{
+        text-align: center;
+        max-width: 65rem;
+        margin: 3rem auto;
+        gap: 2rem;
+    }
+}
+
+.sec-kpis{
+    background-color: components.$color-main;
+    height: 10rem;
+    width: 100%;
+    margin: 5rem 0;
+    .sec-kpis-data{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        max-width: 65rem;
+        margin: 0 auto;
+        gap: 3rem;
+    }
+    .number{
+        color: white;
+        font-size: 2.5rem;
+    }
+    .number-description{
+        color: white;
+        font-size: .7rem;
+    }
+}
+.sec-onboarding{
+    margin: 3rem 0;
+    .intro{
+        @extend .sec-features, .intro;
+        text-align: center;
+    }
+    .onboarding{
+        max-width: 65rem;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        .onboarding-elements{
+            padding: 0;
+            text-align: center;
+            .description{
+                .title{
+                    font-size: .9rem;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+.sec-footer-cta{
+    margin: 5rem auto 0 auto;
+    display: flex;
+    align-items: center;
+    width: 65rem;
+    .footer-text{
+        width: 30%;
+        .footer-title{
+            font-size: 2rem;
+        }
+        .footer-description{
+            font-size: .8rem;
+        }
+    }
+    .footer-img{
+        max-width: 70%;
+    }
+}
